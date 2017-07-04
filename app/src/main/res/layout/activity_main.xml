@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:weightSum="1"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:layout_weight="0.82"
+        android:background="@drawable/inputoutline"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <!-- Name Label -->
+        <TextView
+
+            android:id="@+id/tWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="WELCOME"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_below="@+id/tWelcome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/bCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:background="@color/colorPrimary"
+            android:text="Attendance"
+            android:textColor="#fff"
+            android:layout_below="@+id/lblName" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:text="Logout"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</LinearLayout>

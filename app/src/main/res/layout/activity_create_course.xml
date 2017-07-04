@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp"
+    tools:context="com.nit.institute.Course.CreateCourse">
+
+    <Button
+        android:id="@+id/bImport"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="479dp"
+        android:layout_above="@+id/bSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="479dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bImport"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="28dp"
+        android:padding="5dp"
+        android:textSize="@dimen/padding_large"
+        android:layout_marginStart="28dp"
+        android:layout_toRightOf="@+id/bImport"
+        android:text="Selected File" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Spinner
+        android:background="@drawable/inputoutline"
+        android:id="@+id/sp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/sp4"
+        android:background="@drawable/inputoutline"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp3"
+        android:layout_marginTop="85dp"
+        android:layout_alignLeft="@+id/sp3"
+        android:layout_alignStart="@+id/sp3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Season"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/bImport"
+        android:layout_alignStart="@+id/bImport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/sp1"
+        android:layout_marginTop="23dp"
+        android:text="Branch"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Semester"
+        android:textSize="18sp"
+        android:layout_below="@+id/sp2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="29dp"
+        android:layout_alignLeft="@+id/sp2"
+        android:layout_alignStart="@+id/sp2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/sp4"
+        android:layout_alignLeft="@+id/sp4"
+        android:layout_alignStart="@+id/sp4"
+        android:layout_marginBottom="37dp"
+        android:text="Subject"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
